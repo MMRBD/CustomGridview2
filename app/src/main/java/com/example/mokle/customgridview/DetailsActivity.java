@@ -20,6 +20,5 @@ public class DetailsActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         letter = bundle.getString("letter");
         textView.setText(letter);
-        Toast.makeText(DetailsActivity.this, "Cliked: "+letter, Toast.LENGTH_SHORT).show();
     }
 }
