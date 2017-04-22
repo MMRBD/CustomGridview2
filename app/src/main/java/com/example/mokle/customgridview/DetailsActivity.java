@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DetailsActivity extends AppCompatActivity {
 
@@ -19,5 +20,6 @@ public class DetailsActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         letter = bundle.getString("letter");
         textView.setText(letter);
+        Toast.makeText(DetailsActivity.this, "Cliked: "+letter, Toast.LENGTH_SHORT).show();
     }
 }
